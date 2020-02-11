@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Positioning Blog</title>
+        <meta charset="UTF-8">
+        <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <nav class="nav-bar">
+            <a href="../index.html">
+                <h2 class="title">Pat's Blog!</h2>
+            </a>
+            <ul class="menu">
+                <li><a class="menu-item">Sprint 1</a></li>
+                <li><a href="sprint2-technical.html" class="menu-item active">Sprint 2</a></li>
+                <li><a class="menu-item">Sprint 3</a></li>
+                <li><a class="menu-item">Sprint 4</a></li>
+                <li><a class="menu-item">Sprint 5</a></li>
+                <li>
+                    <a class="menu-item" href="https://github.com/patlim/patlim.github.io">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="main">
+            <h1>Positioning</h1>
+            <h3>What are the differences between relative, absolute, and fixed positioning?</h3>
+            <div class="position">
+                <div class="desc col-7">
+                    <h2>Relative</h2>
+                    <p>Element with relative position, is positioned relative to the normal position.<br>
+                        Essentially, relative to it's static position (default position property).<br>
+                        The positioning is controled with attributes top, right, left and bottom.<br>
+                        As you can see in the example, top means distance from the top of the default position.<br>
+                        <br>
+                        The red box on the right has been moved relative to it's normal position using the following:<br>
+                        .redbox { <br>
+                        &nbsp&nbsp&nbsp&nbspposition: relative;<br>
+                        &nbsp&nbsp&nbsp&nbspleft: 90px; (Moves right 90px)<br>
+                        &nbsp&nbsp&nbsp&nbsptop 70px; (Moves the down 50px)<br>
+                        }
+                    </p>
+                </div>
+                <div class="example relative col-5">
+                    <div id="rel1">
+                        <p id="default-text">Normal Position</p>
+                    </div>
+                    <div id="rel2">
+                        <p id="white-text">Left: 90px;<br>Top: 70px</p>
+                    </div>
+                </div>
+            </div>
+            <div class="position">
+                <div class="desc col-7">
+                    <h2>Absolute</h2>
+                    <p>Elements with absolute positioning can be placed anywhere on the page<br>
+                        Positioning is also controlled using attributes top, right, bottom and left.<br>
+                        Elements will be positioned relative to their parent element.<br>
+                        If the element does not have a parent element, it will be positioned relative to the page.<br>
+                        I've got a little secret about the last example, I used absolute position for the red box<br>
+                        Used in tandem with relative, absolute positioning is extremely powerful.<br>
+                        <br>
+                        In the example I have placed the boxes in various positions.
+                        Below shows the how the green box is positioned in the middle:<br>
+                        .greenbox { <br>
+                        &nbsp&nbsp&nbsp&nbspposition: Absolute;<br>
+                        &nbsp&nbsp&nbsp&nbspleft: 50%; (Position halfway from the left)<br>
+                        &nbsp&nbsp&nbsp&nbsptop 50%; (Position halfway from the top)<br>
+                        }
+                    </p>
+                </div>
+                <div class="example absolute col-5">
+                    <div id="abs1">
+                        <p id="white-text">Left: 0px;<br>Top: 0px</p>
+                    </div>
+                    <div id="abs2">
+                        <p id="white-text">Right: 0px;<br>Bottom: 0px</p>
+                    </div>
+                    <div id="abs3">
+                        <p id="white-text">Left: 50%;<br>Top: 50%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="position">
+                <div class="desc col-7">
+                    <h2>Fixed</h2>
+                    <p>For fixed positioning, the element is positioned relative to the viewpoirt aka. browser window.<br>
+                        For example, the navigation bar up top is an typical use of fixed positioning.<br>
+                        The element will maintain it's position even when scrolling<br>
+                        <br>
+                        That's enough of an example, but for some consitency.<br>
+                        Here's an example:
+                    </p>
+                    <button onclick="myFunction()">Example</button>
+                    <script>
+                        function myFunction() {
+                          var x = document.getElementById("fix1");
+                          if (x.style.display === "block") {
+                            x.style.display = "none";
+                          } else {
+                            x.style.display = "block";
+                          }
+                        }
+                    </script>
+                    <p> .example { <br>
+                        &nbsp&nbsp&nbsp&nbspposition: fixed;<br>
+                        &nbsp&nbsp&nbsp&nbspbottom: 25%;<br>
+                        &nbsp&nbsp&nbsp&nbspright: 25%;<br>
+                    }
+                </div>
+                <div class="example fixed col-5">
+                    <div id="fix1">
+                        <p style="color:orange">0__0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
