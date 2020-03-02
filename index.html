@@ -1,67 +1,90 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-      <meta charset="utf-8">
-      <title>My blog</title>
-      <link href="styles/main.css" rel="stylesheet" type="text/css" />
-      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  </head>
-  <body>
-      <nav class="nav-bar">
-          <a href="index.html">
-              <h2 class="title">Pat's Blog!</h2>
-          </a>
-          <ul class="menu">
-              <li><a href="blog/sprint1-technical.html"class="menu-item">Sprint 1</a></li>
-              <li><a href="blog/sprint2-technical.html" class="menu-item">Sprint 2</a></li>
-              <li><a href="blog/sprint3-technical.html" class="menu-item">Sprint 3</a></li>
-              <li><a href="blog/sprint4-technical.html" class="menu-item">Sprint 4</a></li>
-              <li><a href="blog/sprint5-technical.html" class="menu-item">Sprint 5</a></li>
-              <li>
-                  <a class="menu-item" href="https://github.com/patlim/patlim.github.io">GitHub</a>
-              </li>
-          </ul>
-      </nav>
-      <div class="bio-index div">
-          <div class="col-4 face column">
-              <img class="face" src="media/face.jpeg" alt="face">
-          </div>
-          <div class="bio-text col-7">
-              <h1>Kia ora Taiao</h1>
-              <p style="font-family: roboto;">Here you'll be joining me on the journey of Dev Academy Foundations, very exciting, I know</p>
-          </div>
-      </div>
-      <div class="row">
-          <figure class="col-4 column">
-              <a href="https://patlim.github.io/minesweeper">
-                  <img style="width: 400px; height:250px" class="thumbnail" href="https://patlim.github.io/minesweeper/" src="media/hurtlocker.jpg" alt="Minesweeper">
-              </a>
-              <figcaption>Minesweeper</figcaption>
-          </figure>
-          <figure class="col-4 column">
-              <a href="blog/sprint2-technical.html">
-                  <img class="thumbnail" href="https://via.placeholder.com" src="https://via.placeholder.com/400x250" alt="placeholder">
-              </a>
-              <figcaption>...</figcaption>
-          </figure>
-          <figure class="col-4 column">
-              <img class="thumbnail" href="https://via.placeholder.com" src="https://via.placeholder.com/400x250" alt="placeholder">
-              <figcaption>...</figcaption>
-          </figure>
-      </div>
-      <br>
-      <div class="row">
-          <figure class="col-4 column">
-              <img class="thumbnail" href="https://via.placeholder.com" src="https://via.placeholder.com/400x250" alt="placeholder">
-              <figcaption>...</figcaption>
-          </figure>
-          <figure class="col-4 column">
-              <img class="thumbnail" href="https://via.placeholder.com" src="https://via.placeholder.com/400x250" alt="placeholder">
-              <figcaption>...</figcaption>
-          </figure>
-          <figure class="col-4 column">
-          </figure>
-      </div>
-      <br>
-  </body>
+<head>
+    <meta charset="utf-8">
+    <title>My blog</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav-bar">
+        <a href="index.html">
+            <h2 class="title">Pat's Blog!</h2>
+        </a>
+        <div class="right-menu">
+            <div class="menu">
+                <button class="dropbtn">Tech Blog</button>
+                <ul class="dropdown-content">
+                    <a href="blog/sprint2-technical.html"><li class="dropdown">Sprint 2</li></a>
+                    <a href="blog/sprint3-technical.html"><li class="dropdown">Sprint 3</li></a>
+                    <a href="blog/sprint4-technical.html"><li class="dropdown">Sprint 4</li></a>
+                    <a href="blog/sprint5-technical.html"><li class="dropdown">Sprint 5</li></a>
+                </ul>
+            </div>
+            <div class="menu">
+                <button class="dropbtn">Cultural Blog</button>
+                <ul class="dropdown-content">
+                    <a href="blog/sprint1-cultural.html"><li class="dropdown">Sprint 1</li></a>
+                    <a href="blog/sprint2-cultural.html"><li class="dropdown">Sprint 2</li></a>
+                    <a href="blog/sprint3-cultural.html"><li class="dropdown">Sprint 3</li></a>
+                    <a href="blog/sprint4-cultural.html"><li class="dropdown">Sprint 4</li></a>
+                    <a href="blog/sprint5-cultural.html"><li class="dropdown">Sprint 5</li></a>
+                </ul>
+            </div>
+            <a class="menu" href="https://github.com/patlim/patlim.github.io">GitHub</a>
+        </div>
+    </nav>
+    <div class="bio-index div">
+        <div class="col-4 column">
+            <img class="face" src="media/face.jpg" alt="face">
+        </div>
+        <div class="col-7">
+            <h1>Kia ora Taiao</h1>
+            <p>
+                Here you'll be joining me on the journey of Dev Academy Foundations, very exciting, I know<br>
+                You can find my technical and cultural blogs written throughout Dev Academy foundations.<br><br>
+                Below you can find some of my JavaScript web applications, they aren't beautiful and still in progress!
+            </p>
+        </div>
+    </div>
+    <h1 style="margin-left: 25px;">JavaScript Web Applications</h1>
+    <div class="row">
+        <figure class="col-4 column">
+            <a href="https://patlim.github.io/minesweeper">
+                <img class="thumbnail" src="media/hurtlocker.jpg" alt="Minesweeper.jpg">
+                <figcaption><h1>Minesweeper</h1></figcaption>
+            </a>
+        </figure>
+        <figure class="col-4 column">
+            <a href="https://patlim.github.io/calculator">
+                <img class="thumbnail" src="media/calculator.png" alt="Calculator.png">
+                <figcaption><h1>Hello Calc</h1></figcaption>
+            </a>
+        </figure>
+        <figure class="col-4 column">
+            <a href="https://patlim.github.io/javascript-carnival/whack-a-mole/whack-a-mole">
+                <img class="thumbnail" src="media/mole.jpg" alt="whack-a-mole.jpg">
+                <figcaption><h1>Whack-a-mole</h1></figcaption>
+            </a>
+        </figure>
+    </div>
+    <div class="row">
+        <figure class="col-4 column">
+            <a href="https://patlim.github.io/javascript-carnival/inflate-the-unicorn/inflate-the-unicorn">
+                <img class="thumbnail" src="media/unicorn.png" alt="inflate-the-unicorn.png">
+                <figcaption><h1>Inflate the Unicorn</h1></figcaption>
+            </a>
+        </figure>
+        <figure class="col-4 column">
+            <a href="https://patlim.github.io/javascript-carnival/dress-the-clown/dress-the-clown">
+                <img class="thumbnail" src="media/clown.jpeg" alt="dress-the-clown.jpeg">
+                <figcaption><h1>Dress the Clown</h1></figcaption>
+            </a>
+        </figure>
+        <figure class="col-4 column">
+            <h1>More to come ;)</h1>
+        </figure>
+    </div>
+    <br>
+</body>
 </html>
