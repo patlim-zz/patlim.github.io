@@ -1,18 +1,27 @@
 @media only screen and (max-width: 320px) {
     p {
-        font-size: 5px;
+        font-size: 10px;
+    }
+    img {
+        width: 60%
     }
 }
 
 @media only screen and (max-width: 768px) {
     p {
-        font-size: 5px;
+        font-size: 15px;
+    }
+    img {
+        width: 40%
     }
 }
 
 @media only screen and (min-width: 1200px) {
     p {
-        font-size: 5px;
+        font-size: 30px;
+    }
+    img {
+        width: 30%
     }
 }
 
